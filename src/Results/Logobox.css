@@ -1,0 +1,16 @@
+.Logobox {
+    /* float will probably need to be passed in as a prop */
+    background-color: pink;
+    float: left;
+    height: 60%;
+    width: 25vw;
+    margin: 20px;
+    border: 20px;
+    padding: 20px;
+}
+
+.Logo {
+    height: 40px;
+}
+
+.Rating {}
