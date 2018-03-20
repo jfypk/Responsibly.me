@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './RankingSection.css';
+import '../index.css';
 import Textbox from './Textbox.js';
 
 class RankingSection extends Component {

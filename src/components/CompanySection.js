@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './CompanySection.css';
+import '../index.css';
 import Textbox from './Textbox.js';
 import Logobox from './Logobox.js';
 

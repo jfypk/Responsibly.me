@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './SimilarSection.css';
+import '../index.css';
 import Logobox from './Logobox.js';
 
 class SimilarSection extends Component {

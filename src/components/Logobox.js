@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Logobox.css';
+import '../index.css';
 
 class Logobox extends Component {
     constructor(props) {

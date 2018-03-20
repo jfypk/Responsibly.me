@@ -1,5 +1,102 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-}
+  font-family: sans-serif; }
+
+.App {
+  text-align: center; }
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px; }
+
+.App-intro {
+  font-size: large; }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+.Inform-header {
+  background-color: #46ba3b;
+  height: 5vw;
+  padding: 20px;
+  color: #ffffff; }
+
+.Inform-title {
+  font-size: 1.5em;
+  text-align: left; }
+
+.CompanySection {
+  background-color: white;
+  margin: 0 20px 20px 20px;
+  border-style: solid;
+  border-width: 2px;
+  height: 30%; }
+
+.CompanyImg {
+  position: absolute;
+  left: 15%;
+  top: 15%; }
+
+.CompanyInfo {
+  position: absolute;
+  right: 15%;
+  top: 15%; }
+
+.Logobox {
+  /* float will probably need to be passed in as a prop */
+  background-color: pink;
+  float: left;
+  height: 60%;
+  width: 25vw;
+  margin: 20px;
+  border: 20px;
+  padding: 20px; }
+
+.Logo {
+  height: 40px; }
+
+.RankingSection {
+  background-color: #ffffff;
+  margin: 20px;
+  border-style: solid;
+  border-width: 2px;
+  height: 30%; }
+
+.sustainability {
+  position: relative;
+  float: left; }
+
+.environmental {
+  position: relative;
+  float: left; }
+
+.Results {
+  background-color: #46ba3b;
+  height: 95vh;
+  text-align: left; }
+
+.SimilarSection {
+  background-color: white;
+  margin: 20px;
+  border-style: solid;
+  border-width: 2px;
+  height: 30%; }
+
+.Textbox {
+  background-color: lightblue;
+  float: left;
+  height: 60%;
+  width: 25vw;
+  margin: 20px;
+  border: 20px;
+  padding: 20px; }
+
+.Header {
+  text-align: center; }
+
+ul {
+  list-style-type: none; }
