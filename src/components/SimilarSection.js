@@ -6,7 +6,7 @@ class SimilarSection extends Component {
     render() {
 
         return(
-            <div className="SimilarSection">
+            <div className="Section">
                 <div className="Company1"><Logobox company={this.props.brand} rating={this.props.industry}/></div>
                 <div className="Company2"><Logobox company={this.props.brand} rating={this.props.industry}/></div>
                 <div className="Company3"><Logobox company={this.props.brand} rating={this.props.industry}/></div>

@@ -8,7 +8,7 @@ class Results extends Component {
     render() {
         console.log(this.props.data.brand);
         return (
-            <div>
+            <div className="Results">
                 <CompanySection 
                     brand={this.props.data.brand} 
                     parent={this.props.data.parent} 

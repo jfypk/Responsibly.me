@@ -9,7 +9,7 @@ class RankingSection extends Component {
         let fairnessList = [this.props.cei_rating, this.props.ethical_company_nominee, this.props.women_on_board, this.props.best_workplaces_women, this.props.best_workplaces_diversity];
 
         return(
-            <div className="RankingSection">
+            <div className="Section">
                 <div className="Sustainability">
                     <Textbox header="Sustainability" list={sustainabilityList}/>
                 </div>

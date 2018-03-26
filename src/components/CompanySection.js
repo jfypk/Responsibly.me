@@ -8,7 +8,7 @@ class CompanySection extends Component {
         var myList = [this.props.parent, this.props.industry];
 
         return(
-            <div className="CompanySection">
+            <div className="Section">
                 <div className="CompanyImg">
                     <Logobox company={this.props.brand}/>
                 </div>

@@ -6,12 +6,15 @@
         "matches": [
             "<all_urls>"
         ],
-        "js": ["inform-ext-content.js"]
+        "js": ["content.js"]
     }],
-    "permissions": [],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "permissions": ["tabs"],
     "browser_action": {
         "default_icon": "tree.png",
-        "default_popup": "inform-popup.html",
+        "default_popup": "popup.html",
         "default_title": "Learn the social responsibility initiatives of this company"
     }
 }
