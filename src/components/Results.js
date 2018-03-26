@@ -5,47 +5,42 @@ import RankingSection from './RankingSection.js';
 import SimilarSection from './SimilarSection.js';
 
 class Results extends Component {
-
     render() {
-        let returnNodes = this.props.data.map(result => {
-            return( 
-                <div>
+        console.log(this.props.data.brand);
+        return (
+            <div>
                 <CompanySection 
-                    name={result.brand} 
-                    parent={result.parent} 
-                    industry={result.industry}
+                    brand={this.props.data.brand} 
+                    parent={this.props.data.parent} 
+                    industry={this.props.data.industry}
                 />
                 <RankingSection 
-                    cei_rating= { result.cei_rating } 
-                    ethical_company_nominee= { result.ethical_company_nominee } 
-                    women_on_board= { result.women_on_board } 
-                    best_workplaces_women= { result.best_workplaces_women } 
-                    best_workplaces_diversity= { result.best_workplaces_diversity } 
-                    esg_score= { result.esg_score } 
-                    gc_score= { result.gc_score } 
-                    corporate_knights_score= { result.corporate_knights_score } 
-                    greener_electronics= { result.greener_electronics } 
-                    clean_energy_index= { result.clean_energy_index } 
-                    natural_gas_intensity= { result.natural_gas_intensity } 
-                    coal_intensity= { result.coal_intensity } 
-                    nuclear_intensity= { result.nuclear_intensity } 
-                    energy_transparency= { result.energy_transparency } 
-                    renewable_energy_commitment= { result.renewable_energy_commitment } 
-                    energy_efficiency= { result.energy_efficiency } 
-                    renewable_procurement= { result.renewable_procurement } 
-                    advocacy= { result.advocacy } 
-                    detox_2020_plan= { result.detox_2020_plan } 
-                    pfc_elimination= { result.pfc_elimination } 
-                    transparency= { result.transparency } 
-                    />
-                <SimilarSection name= { result.brand } industry= { result.industry }/>
+                    cei_rating= { this.props.data.cei_rating } 
+                    ethical_company_nominee= { this.props.data.ethical_company_nominee } 
+                    women_on_board= { this.props.data.women_on_board } 
+                    best_workplaces_women= { this.props.data.best_workplaces_women } 
+                    best_workplaces_diversity= { this.props.data.best_workplaces_diversity } 
+                    esg_score= { this.props.data.esg_score } 
+                    gc_score= { this.props.data.gc_score } 
+                    corporate_knights_score= { this.props.data.corporate_knights_score } 
+                    greener_electronics= { this.props.data.greener_electronics } 
+                    clean_energy_index= { this.props.data.clean_energy_index } 
+                    natural_gas_intensity= { this.props.data.natural_gas_intensity } 
+                    coal_intensity= { this.props.data.coal_intensity } 
+                    nuclear_intensity= { this.props.data.nuclear_intensity } 
+                    energy_transparency= { this.props.data.energy_transparency } 
+                    renewable_energy_commitment= { this.props.data.renewable_energy_commitment } 
+                    energy_efficiency= { this.props.data.energy_efficiency } 
+                    renewable_procurement= { this.props.data.renewable_procurement } 
+                    advocacy= { this.props.data.advocacy } 
+                    detox_2020_plan= { this.props.data.detox_2020_plan } 
+                    pfc_elimination= { this.props.data.pfc_elimination } 
+                    transparency= { this.props.data.transparency } 
+                />
+                <SimilarSection 
+                    name= { this.props.data.brand } 
+                    industry= { this.props.data.industry }/>
                 </div>
-            )
-        })
-        return(
-            <div className="Results">
-                { returnNodes }
-            </div>
         );
         
     }

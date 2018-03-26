@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import Results from '../components/Results.js';
 
-//need to find just one company
 class ResultsContainer extends Component {
     constructor(props) {
         super(props);
@@ -20,7 +19,6 @@ class ResultsContainer extends Component {
 
     loadResultsFromServer() {
         axios.get(this.props.url).then(res => {
-            console.log(res.data);
             this.setState({ data: res.data, fetching: false})
         }).catch(res => {
             this.setState({error: res.data, fetching: false});
