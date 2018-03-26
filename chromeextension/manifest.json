@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "inform-extension",
+    "version": "0.1",
+    "content_scripts": [{
+        "matches": [
+            "<all_urls>"
+        ],
+        "js": ["inform-ext-content.js"]
+    }],
+    "browser_action": {
+        "default_icon": "djfsl.png",
+        "default_popup": "popup.html",
+        "default_title": "Inform here"
+    }
+}

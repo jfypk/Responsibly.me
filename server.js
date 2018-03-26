@@ -39,30 +39,53 @@ router.get('/', function(req, res) {
 //Use router config when we call /api
 app.use('/api', router);
 
-//adding the /comments route to our /api router
+//adding the /results route to our /api router
 router.route('/results')
-
     //retrieve all results from the database
     .get(function(req, res) {
-        //looks at our Comment Schema
-        Result.find(function(err, results) {
+        console.log("getting data");
+        //looks at our Results Schema
+        Result.findOne({ "brand":"Google" }, function(err, results) {
             if (err) {
+                console.log(err);
                 res.send(err);
             }  
-            //responds with a json object of our database comments.
+            //responds with a json object of our database results.
             res.json(results)
         });
     })
     
     //post new results to the database
     .post(function(req, res) {
-        var result = new Result();
+        console.log("posting");
+        let result = new Result();
         //body parser lets us use the req.body
-        result.id = req.body.id;
-        result.name = req.body.name;
-        result.industry = req.body.industry;
-        result.rating = req.body.rating;
-        result.numLists = req.body.numLists;
+        result._id = req.body._id;
+        result.brand = req.body.brand;
+        result.parent = req.body.parent;
+        result.cei_rating = req.body.cei_rating;
+        result.ethical_company_nominee = req.body.ethical_company_nominee;
+        result.women_on_board = req.body.women_on_board;
+        result.best_workplaces_women = req.body.best_workplaces_women;
+        result.best_workplaces_diversity = req.body.best_workplaces_diversity;
+        result.esg_score = req.body.esg_score;
+        result.gc_score = req.body.gc_score;
+        result.corporate_knights_score = req.body.corporate_knights_score;
+        result.greener_electronics = req.body.greener_electronics;
+        result.clean_energy_index = req.body.clean_energy_index;
+        result.natural_gas_intensity = req.body.natural_gas_intensity;
+        result.coal_intensity = req.body.coal_intensity;
+        result.nuclear_intensity = req.body.nuclear_intensity;
+        result.energy_transparency = req.body.energy_transparency;
+        result.renewable_energy_commitment = req.body.renewable_energy_commitment;
+        result.energy_efficiency = req.body.energy_efficiency;
+        result.renewable_procurement = req.body.renewable_procurement;
+        result.advocacy = req.body.advocacy;
+        result.detox_2020_plan = req.body.detox_2020_plan;
+        result.pfc_elimination = req.body.pfc_elimination;
+        result.transparency = req.body.transparency;
+        result.count = req.body.count;
+
         result.save(function(err) {
             if (err) {
                 res.send(err);
@@ -73,6 +96,7 @@ router.route('/results')
 
     //update our results based on ID passed to the route
     .put(function(req, res) {
+        console.log("putting data");
         Result.findById(req.params.result_id, function(err, result) {
             if(err) {
                 res.send(err);
@@ -96,13 +120,14 @@ router.route('/results')
 
     //delete method for removing a Result from the database
     .delete(function(req, res) {
+        console.log("deleting data");
         //select the result by ID, then remove it. 
         Result.remove({ _id: res.params.result_id}, function(err, result) {
             if(err) {
                 res.send(err);
             }
             //this might need an else? 
-            res.json({ message: 'Comment has been deleted' })
+            res.json({ message: 'Data has been deleted' })
         })
     });
 
