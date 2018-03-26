@@ -1,6 +1,6 @@
 {
     "manifest_version": 2,
-    "name": "inform-extension",
+    "name": "Inform Extension",
     "version": "0.1",
     "content_scripts": [{
         "matches": [
@@ -8,9 +8,10 @@
         ],
         "js": ["inform-ext-content.js"]
     }],
+    "permissions": [],
     "browser_action": {
-        "default_icon": "djfsl.png",
-        "default_popup": "popup.html",
-        "default_title": "Inform here"
+        "default_icon": "tree.png",
+        "default_popup": "inform-popup.html",
+        "default_title": "Learn the social responsibility initiatives of this company"
     }
 }

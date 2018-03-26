@@ -7,9 +7,9 @@ class SimilarSection extends Component {
 
         return(
             <div className="SimilarSection">
-                <div className="Company1"><Logobox company="Adidas" rating="Good"/></div>
-                <div className="Company2"><Logobox company="Puma" rating="Fair"/></div>
-                <div className="Company3"><Logobox company="Reebok" rating="Bad"/></div>
+                <div className="Company1"><Logobox company={this.props.brand} rating={this.props.industry}/></div>
+                <div className="Company2"><Logobox company={this.props.brand} rating={this.props.industry}/></div>
+                <div className="Company3"><Logobox company={this.props.brand} rating={this.props.industry}/></div>
             </div>
         );
     }

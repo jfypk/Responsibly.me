@@ -5,15 +5,15 @@ import Logobox from './Logobox.js';
 
 class CompanySection extends Component {
     render() {
-        var myList = ["CEO: Charles Mingus", "Nowhereville, NO", "USA"];
+        var myList = [this.props.parent, this.props.industry];
 
         return(
             <div className="CompanySection">
                 <div className="CompanyImg">
-                    <Logobox company="Nike"/>
+                    <Logobox company={this.props.brand}/>
                 </div>
                 <div className="CompanyInfo">
-                    <Textbox header="Company Name" list={myList}/>
+                    <Textbox header={this.props.brand} list={myList}/>
                 </div>
             </div>
         );
