@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Inform Test Extension",
+    "version": "0.1",
+    "content_scripts": [{
+        "matches": [
+            "*://*.nike.com/*",
+            "*://*.adidas.com/*",
+            "*://*.puma.com/*",
+            "*://*.ua.com/*"
+        ],
+        "js": ["content.js"]
+    }],
+    "permissions": ["tabs", "*://*.nike.com/*", "*://*.adidas.com/*", "*://*.puma.com/*", "*://*.ua.com/*"],
+    "browser_action": {
+        "default_icon": "tree.png",
+        "default_popup": "popup.html",
+        "default_title": "TEST"
+    }
+}
