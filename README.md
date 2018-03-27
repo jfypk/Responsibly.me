@@ -1,6 +1,6 @@
 to start:
 
-nf start 
+nf start -p 3000
 nodemon server.js to start api at localhost:3001/api/results
 
 ToDo: 
