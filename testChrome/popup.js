@@ -96,7 +96,7 @@ function checkURL(str) {
         case companyData[0].url:
             companyInfo(companyData[0]);
 
-            com.innerHTML = "Competitors' score";
+            com.innerHTML = "Competitors' Inform Scores";
             comp1.innerHTML = companyData[1].brand + ": " + calculateAggregate(companyData[1]);
             comp2.innerHTML = companyData[2].brand + ": " + calculateAggregate(companyData[2]);
             comp3.innerHTML = companyData[3].brand + ": " + calculateAggregate(companyData[3]);
@@ -105,7 +105,7 @@ function checkURL(str) {
             companyInfo(companyData[1]);
 
             //rewrite this
-            com.innerHTML = "Competitors' score";
+            com.innerHTML = "Competitors' Inform Scores";
                                 //link the brand name w/ url
             comp1.innerHTML = companyData[0].brand + ": " + calculateAggregate(companyData[0]);
             comp2.innerHTML = companyData[2].brand + ": " + calculateAggregate(companyData[2]);
@@ -114,7 +114,7 @@ function checkURL(str) {
         case companyData[2].url:
             companyInfo(companyData[2]);
 
-            com.innerHTML = "Competitors' score";
+            com.innerHTML = "Competitors' Inform Scores";
             comp1.innerHTML = companyData[1].brand + ": " + calculateAggregate(companyData[1]);
             comp2.innerHTML = companyData[0].brand + ": " + calculateAggregate(companyData[0]);
             comp3.innerHTML = companyData[3].brand + ": " + calculateAggregate(companyData[3]);
@@ -122,7 +122,7 @@ function checkURL(str) {
         case companyData[3].url: 
             companyInfo(companyData[3]);
             
-            com.innerHTML = "Competitors' score";
+            com.innerHTML = "Competitors' Inform Scores";
             comp1.innerHTML = companyData[1].brand + ": " + calculateAggregate(companyData[1]);
             comp2.innerHTML = companyData[2].brand + ": " + calculateAggregate(companyData[2]);
             comp3.innerHTML = companyData[0].brand + ": " + calculateAggregate(companyData[0]);
@@ -134,7 +134,7 @@ function checkURL(str) {
 
 function companyInfo(data) {
     title.innerHTML = data.brand;
-    ag.innerHTML = "Total Score: " + calculateAggregate(data)
+    ag.innerHTML = "Inform Score: " + calculateAggregate(data)
     cr.innerHTML = "Corporate Equality Index: " + data.rankings.cei_rating;
     wob.innerHTML = "% of female Board of Directors: " + data.rankings.women_on_board;
     esg.innerHTML = "Environmental, Social, Governance Score: " + data.rankings.esg_score;

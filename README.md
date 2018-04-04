@@ -10,3 +10,9 @@ ToDo:
 - [ ] Serve data properly in results section 
 - [ ] Serve data properly in Chrome extension
 - [ ] Style the website and Chrome extension 
+- [ ] Change the icon from B&W to color whether extension is active on that site
+- [ ] Be clearer on splash page on how to use extension
+- [ ] Change the data to laymen terms 
+- [ ] Add hover ability over data to get more information on data
+- [ ] Visual cues for data?
+- [X] Open links automatically in new tabs 
