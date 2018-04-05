@@ -45,7 +45,7 @@ router.route('/results')
     .get(function(req, res) {
         console.log("getting data");
         //looks at our Results Schema
-        Result.findOne({ "brand":"Google" }, function(err, results) {
+        Result.find(function(err, results) { //Do I findOne() here when I find a URL?
             if (err) {
                 console.log(err);
                 res.send(err);

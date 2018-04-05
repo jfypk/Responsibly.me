@@ -6,7 +6,7 @@ import SimilarSection from './SimilarSection.js';
 
 class Results extends Component {
     render() {
-        console.log(this.props.data.brand);
+        console.log(this.props.data);
         return (
             <div className="Results">
                 <CompanySection 

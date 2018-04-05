@@ -19,7 +19,7 @@ class ResultsContainer extends Component {
 
     loadResultsFromServer() {
         axios.get(this.props.url).then(res => {
-            this.setState({ data: res.data, fetching: false})
+            this.setState({ data: res.data, fetching: false}) //how do i get this data into the background.js file? 
         }).catch(res => {
             this.setState({error: res.data, fetching: false});
         });

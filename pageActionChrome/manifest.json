@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "Inform Test Extension",
+    "version": "0.1",
+    "background": {
+        "persistent": false,
+        "scripts": ["background.js"]
+    },
+    "content_scripts": [{
+        "matches": [
+            "*://*.nike.com/*",
+            "*://*.adidas.com/*",
+            "*://*.puma.com/*",
+            "*://*.ua.com/*"
+        ],
+        "js": ["content.js"]
+    }],
+    "page_action" : {
+        "default_title": "Page Action Chrome Extension",
+        "default_icon": "tree.png",
+        "default_popup" : "popup.html"
+    }
+}

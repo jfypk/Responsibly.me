@@ -11,6 +11,7 @@ var ResultsSchema = new Schema({
     brand: String,
     parent: String,
     industry: String,
+    domain: String,
     cei_rating: Number,
     ethical_company_nominee: Boolean,
     women_on_board: Number,
