@@ -9,6 +9,6 @@ if(chrome.tabs != undefined) {
     tabURL = tabURL.substr(firstDotIndex+1); // eslint-disable-line 
     // match tabURL with domain column in database to get ID in server.js file?
     // serve up that results page and send that results page to popup.html
-    console.log(tabURL);
+    document.getElementById("url").innerHTML = tabURL;
 });
 }
