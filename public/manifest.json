@@ -12,6 +12,5 @@
     "48": "tree.png",
     "128": "tree.png"
   },
-  "permissions": [
-  ]
+  "permissions": ["tabs"]
 }

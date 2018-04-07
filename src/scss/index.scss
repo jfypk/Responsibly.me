@@ -1,11 +1,12 @@
 // use flexbox to position the elements side by side of one another.
 // use display: grid as well
-$green:#46ba3b;
+$green:#149152;
 $white: #ffffff;
+$font: 'Open Sans Condensed', sans-serif;
 body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: $font;
 }
 
 .App {
@@ -124,4 +125,33 @@ body {
 
 ul {
     list-style-type: none;
+}
+
+.Splash {
+    background-color: $green;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+    #description {
+        width: 75vw;
+    }
+
+    #instructions {
+        font-size: 24px;
+        width: 25vw;
+        padding: 50px;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    a {
+        color: #0033cc;
+        text-decoration: none;
+    }
 }
