@@ -10,15 +10,14 @@ class App extends Component {
   // }
 
   // getInitialState() {
-    
+
   // }
-  
 
   render() {
     var condition = true; //CHANGE THIS CONDITION TO TRACK THE URL
     const page = condition ? (
       <ResultsContainer url='http://localhost:3001/api/results' pollInterval={20000} />
-      ) : ( 
+      ) : (
       <Splash />
       );
 

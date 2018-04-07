@@ -47,7 +47,6 @@ class ResultsContainer extends Component {
     componentDidMount() {
         this.setState({fetching: true});
         this.loadResultsFromServer();
-        //make the poll interval longer than 2 seconds for performance.
         setInterval(this.loadResultsFromServer, this.props.pollInterval);
     }
 
