@@ -1,16 +1,16 @@
 {
   "manifest_version": 2,
-  "name": "My Extension",
-  "description": "This extension is a starting point to create a real Chrome extension",
+  "name": "Inform",
+  "description": "The Inform Platform",
   "version": "0.0.1",
   "browser_action": {
     "default_popup": "index.html",
     "default_title": "Open the popup"
   },
   "icons": {
-    "16": "logo-small.png",
-    "48": "logo-small.png",
-    "128": "logo-small.png"
+    "16": "tree.png",
+    "48": "tree.png",
+    "128": "tree.png"
   },
   "permissions": [
   ]
