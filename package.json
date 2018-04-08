@@ -22,7 +22,8 @@
         "build": "react-scripts build",
         "test": "react-scripts test --env=jsdom",
         "eject": "react-scripts eject",
-        "build-css": "node-sass --include-path scss src/scss/index.scss ./src/index.css"
+        "build-css": "node-sass --include-path scss src/scss/index.scss ./src/index.css",
+        "watch-css": "nodemon -e scss -x \"npm run build-css\""
     },
     "devDependencies": {
         "enzyme": "^3.3.0",

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import '../index.css';
-import CompanySection from './CompanySection.js';
 import RankingSection from './RankingSection.js';
 import SimilarSection from './SimilarSection.js';
 
@@ -8,12 +7,10 @@ class Results extends Component {
     render() {
         return (
             <div className="Results">
-                <CompanySection 
+                <RankingSection 
                     brand={this.props.data.brand} 
                     parent={this.props.data.parent} 
                     industry={this.props.data.industry}
-                />
-                <RankingSection 
                     cei_rating= { this.props.data.cei_rating } 
                     ethical_company_nominee= { this.props.data.ethical_company_nominee } 
                     women_on_board= { this.props.data.women_on_board } 
