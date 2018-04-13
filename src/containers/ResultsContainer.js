@@ -23,7 +23,7 @@ class ResultsContainer extends Component {
     loadResultsFromServer() {
         axios.get(this.props.url).then(res => {
             let urlData = this.findDataForURL(res.data, this.props.site);
-            this.setState({ data: urlData, fetching: false}) //how do i get this data into the background.js file? 
+            this.setState({ data: urlData, fetching: false});
         }).catch(res => {
             this.setState({error: res.data, fetching: false});
         });
@@ -50,12 +50,12 @@ class ResultsContainer extends Component {
             );
         }
 
-        if (this.props.site === "") {
-            return <Splash />
-        }
-
         if (this.state.data === undefined) {
             return <MissingCompany />
+        }
+
+        if (this.props.site === "Inform.com") {
+            return <Splash />
         }
 
         return (

@@ -13,7 +13,6 @@ var ResultsSchema = new Schema({
     industry: String,
     domain: String,
     cei_rating: Number,
-    ethical_company_nominee: Boolean,
     women_on_board: Number,
     best_workplaces_women: Number,
     best_workplaces_diversity: Number,
@@ -33,7 +32,9 @@ var ResultsSchema = new Schema({
     detox_2020_plan: Number, 
     pfc_elimination: Number, 
     transparency: Number, 
-    count: Number
+    total_score: Number,
+    competitors: String,
+    competitor_scores: String
 }, {collection: 'inform'});
 
 module.exports = mongoose.model('Result', ResultsSchema);

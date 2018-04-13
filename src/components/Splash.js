@@ -92,6 +92,9 @@ class Splash extends Component {
 		        <div id="tweet">
 		        	<p>If you can't find the company you're looking for, tweet at them and demand transparency!</p>
 		        </div>
+				<div id="tweet">
+		        	<a href="https://www.jeff-park.com">Sources</a>
+		        </div>
         	</div>
 			);
 	}

@@ -5,7 +5,7 @@ import App from './containers/App';
 import registerServiceWorker from './registerServiceWorker';
 
 // var url = document.getElementById('url').innerHTML;	
-var url = "nike.com";
+var url = "hm.com";
 
 ReactDOM.render(
     <App site={url}/>, 

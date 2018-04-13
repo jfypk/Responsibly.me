@@ -3,8 +3,8 @@
 $green:#149152;
 $white: #ffffff;
 $blue: #0033cc;
-$font: 'Open Sans Condensed', sans-serif;
-
+$font: 'Open Sans Condensed',
+sans-serif;
 #url {
     display: none;
 }
@@ -13,6 +13,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: $font;
+    color: $white;
 }
 
 .App-logo {
@@ -37,7 +38,6 @@ body {
     background-color: $green;
     height: 5vw;
     padding: 20px;
-    color: $white;
 }
 
 .Inform-title {
@@ -52,30 +52,41 @@ body {
     background-color: $green;
 }
 
-.Section {
-    background-color: white;
+.NameSection {
     margin: 0 20px 20px 20px;
     border-style: solid;
     border-width: 2px;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 
-.Logobox {
-    /* float will probably need to be passed in as a prop */
-    background-color: pink;
+.BrandData {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 40px;
+}
+
+.Rankings {
+    margin: 0 20px 20px 20px;
+    border-style: solid;
+    border-width: 2px;
     display: flex;
     flex-direction: column;
-    height: 100%;
-    justify-content: space-around;
-    align-content: space-between;
+    text-align: left;
+    h1 {
+        text-align: left;
+    }
+    ul {
+        list-style-type: none;
+    }
+    span {
+        font-style: bold;
+    }
 }
 
-.Logo {
-    height: 40px;
-}
-
-.Results {}
+.Ratings {}
 
 .Company1 {}
 
@@ -83,18 +94,8 @@ body {
 
 .Company3 {}
 
-.Textbox {
-    background-color: lightblue;
-    display: flex;
-    flex-direction: column;
-}
-
 .Header {
     text-align: center;
-}
-
-ul {
-    list-style-type: none;
 }
 
 .Splash {
@@ -105,16 +106,13 @@ ul {
     flex-direction: column;
     flex-wrap: nowrap;
     width: 100vw;
-
     #description {
         padding-left: 25px;
         padding-right: 25px;
     }
-
     #instructions {
         text-align: center;
     }
-
     #companies {
         font-size: 24px;
         display: flex;
@@ -122,15 +120,12 @@ ul {
         justify-content: space-around;
         padding: 20px;
     }
-
     #tweet {
         text-align: center;
     }
-
     ul {
         list-style-type: none;
     }
-
     a {
         color: $blue;
         text-decoration: none;
