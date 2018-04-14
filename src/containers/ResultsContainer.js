@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import Results from '../components/Results.js';
 import MissingCompany from '../components/MissingCompany';
-import Splash from '../components/Splash';
+
 
 class ResultsContainer extends Component {
     constructor(props) {
@@ -52,10 +52,6 @@ class ResultsContainer extends Component {
 
         if (this.state.data === undefined) {
             return <MissingCompany />
-        }
-
-        if (this.props.site === "Inform.com") {
-            return <Splash />
         }
 
         return (

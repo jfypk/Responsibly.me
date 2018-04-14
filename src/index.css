@@ -21,7 +21,7 @@ body {
     transform: rotate(360deg); } }
 
 .Inform-header {
-  background-color: #149152;
+  background-color: #499383;
   height: 5vw;
   padding: 20px; }
 
@@ -33,7 +33,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: #149152; }
+  background-color: #499383; }
 
 .NameSection {
   margin: 0 20px 20px 20px;
@@ -63,32 +63,122 @@ body {
   .Rankings span {
     font-style: bold; }
 
-.Header {
-  text-align: center; }
-
 .Splash {
-  text-align: left;
-  background-color: #149152;
-  font-size: 30px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  width: 100vw; }
-  .Splash #description {
-    padding-left: 25px;
-    padding-right: 25px; }
-  .Splash #instructions {
-    text-align: center; }
-  .Splash #companies {
-    font-size: 24px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 20px; }
-  .Splash #tweet {
-    text-align: center; }
+  width: 100vw;
+  font-size: 24px; }
+  .Splash a {
+    color: #499383;
+    text-decoration: none; }
+  .Splash a:visited {
+    color: #499383; }
   .Splash ul {
     list-style-type: none; }
-  .Splash a {
-    color: #0033cc;
-    text-decoration: none; }
+  .Splash .SplashHeader {
+    background-color: #FFEFEA;
+    color: #000000;
+    height: 65vw;
+    display: grid;
+    grid-template-columns: 19% 17% 57% 7%;
+    grid-template-rows: 9% 82% 9%;
+    justify-items: center;
+    align-items: center;
+    justify-content: center; }
+    .Splash .SplashHeader .headerText {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3; }
+    .Splash .SplashHeader .headerImg {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 3; }
+  .Splash .Overview {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    height: 60vw;
+    display: grid;
+    grid-template-columns: 19% 31% 31% 19%;
+    grid-template-rows: 9% 53% 8% 17% 9%;
+    justify-items: center;
+    align-items: center;
+    justify-content: center; }
+    .Splash .Overview #description {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      display: grid;
+      grid-template-columns: 6% 16% 28% 6% 28% 16%;
+      grid-template-rows: 9% 81% 9%; }
+      .Splash .Overview #description #col1 {
+        grid-column: 2 / 4;
+        grid-row: 2 / 3; }
+      .Splash .Overview #description #col2 {
+        grid-column: 5 / 7;
+        grid-row: 2 / 3;
+        align-self: end;
+        justify-self: end; }
+    .Splash .Overview #howto {
+      grid-column-start: 2;
+      grid-column-end: 5;
+      grid-row-start: 4;
+      grid-row-end: 6; }
+    .Splash .Overview .button {
+      background-color: #499383;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px; }
+  .Splash .Companies {
+    background-color: #ffffff;
+    color: #000000;
+    display: grid;
+    grid-template-columns: 19% 15.5% 15.5% 15.5% 15.5% 19%;
+    grid-template-rows: 100%;
+    justify-items: start;
+    align-items: center;
+    justify-content: center; }
+    .Splash .Companies .companiesText {
+      grid-column: 2 / 6;
+      grid-row: 1 / 2; }
+    .Splash .Companies .companiesList {
+      display: grid;
+      grid-template-columns: 19% 15.5% 15.5% 15.5% 15.5% 19%;
+      grid-template-rows: 100%;
+      justify-items: start; }
+      .Splash .Companies .companiesList .firstCol {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2; }
+      .Splash .Companies .companiesList .secondCol {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2; }
+      .Splash .Companies .companiesList .thirdCol {
+        grid-column: 4 / 5;
+        grid-row: 1 / 2; }
+      .Splash .Companies .companiesList .fourthCol {
+        grid-column: 5 / 6;
+        grid-row: 1 / 2; }
+  .Splash .Footer {
+    background-color: #FFEFEA;
+    color: #000000;
+    display: grid;
+    grid-template-columns: 19% 20.67% 20.67% 20.66% 19%;
+    grid-template-rows: 100%;
+    justify-items: center;
+    align-items: center;
+    justify-content: center; }
+    .Splash .Footer .backtotop {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2; }
+    .Splash .Footer .footerdescription {
+      grid-column: 3 / 4;
+      grid-row: 1 / 2; }
+    .Splash .Footer .copyright {
+      grid-column: 4 / 5;
+      grid-row: 1 / 2; }

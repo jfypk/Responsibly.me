@@ -1,8 +1,10 @@
 // use flexbox to position the elements side by side of one another.
 // use display: grid as well
-$green:#149152;
 $white: #ffffff;
 $blue: #0033cc;
+$bridesmaid: #FFEFEA;
+$green: #499383;
+$black: #000000;
 $font: 'Open Sans Condensed',
 sans-serif;
 #url {
@@ -86,48 +88,146 @@ body {
     }
 }
 
-.Ratings {}
-
-.Company1 {}
-
-.Company2 {}
-
-.Company3 {}
-
-.Header {
-    text-align: center;
-}
-
 .Splash {
-    text-align: left;
-    background-color: $green;
-    font-size: 30px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
     width: 100vw;
-    #description {
-        padding-left: 25px;
-        padding-right: 25px;
+    font-size: 24px;
+    a {
+        color: $green;
+        text-decoration: none;
     }
-    #instructions {
-        text-align: center;
-    }
-    #companies {
-        font-size: 24px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding: 20px;
-    }
-    #tweet {
-        text-align: center;
+    a:visited {
+        color: $green;
     }
     ul {
         list-style-type: none;
     }
-    a {
-        color: $blue;
-        text-decoration: none;
+    .SplashHeader {
+        background-color: $bridesmaid;
+        color: $black;
+        height: 65vw;
+        display: grid;
+        grid-template-columns: 19% 17% 57% 7%;
+        grid-template-rows: 9% 82% 9%;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        .headerText {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        .headerImg {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+    }
+    .Overview {
+        margin-top: 60px;
+        margin-bottom: 20px;
+        background-color: $white;
+        color: $black;
+        height: 60vw;
+        display: grid;
+        grid-template-columns: 19% 31% 31% 19%;
+        grid-template-rows: 9% 53% 8% 17% 9%;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        #description {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            display: grid;
+            grid-template-columns: 6% 16% 28% 6% 28% 16%;
+            grid-template-rows: 9% 81% 9%;
+            #col1 {
+                grid-column: 2 / 4;
+                grid-row: 2 / 3;
+            }
+            #col2 {
+                grid-column: 5 / 7;
+                grid-row: 2 / 3;
+                align-self: end;
+                justify-self: end;
+            }
+        }
+        #howto {
+            grid-column-start: 2;
+            grid-column-end: 5;
+            grid-row-start: 4;
+            grid-row-end: 6;
+        }
+        .button {
+            background-color: $green;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+    }
+    .Companies {
+        background-color: $white;
+        color: $black;
+        display: grid;
+        grid-template-columns: 19% 15.5% 15.5% 15.5% 15.5% 19%;
+        grid-template-rows: 100%;
+        justify-items: start;
+        align-items: center;
+        justify-content: center;
+        .companiesText {
+            grid-column: 2 / 6;
+            grid-row: 1 / 2;
+        }
+        .companiesList {
+            display: grid;
+            grid-template-columns: 19% 15.5% 15.5% 15.5% 15.5% 19%;
+            grid-template-rows: 100%;
+            justify-items: start;
+            .firstCol {
+                grid-column: 2 / 3;
+                grid-row: 1 / 2;
+            }
+            .secondCol {
+                grid-column: 3 / 4;
+                grid-row: 1 / 2;
+            }
+            .thirdCol {
+                grid-column: 4 / 5;
+                grid-row: 1 / 2;
+            }
+            .fourthCol {
+                grid-column: 5 / 6;
+                grid-row: 1 / 2;
+            }
+        }
+    }
+    .Footer {
+        background-color: $bridesmaid;
+        color: $black;
+        display: grid;
+        grid-template-columns: 19% 20.67% 20.67% 20.66% 19%;
+        grid-template-rows: 100%;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        .backtotop {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+        }
+        .footerdescription {
+            grid-column: 3 / 4;
+            grid-row: 1 / 2;
+        }
+        .copyright {
+            grid-column: 4 / 5;
+            grid-row: 1 / 2;
+        }
     }
 }
