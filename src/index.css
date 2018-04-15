@@ -2,69 +2,79 @@
   display: none; }
 
 body {
-  margin: 0;
-  padding: 0;
   font-family: "Open Sans Condensed", sans-serif;
-  color: #ffffff; }
+  color: #000000;
+  width: 500px;
+  height: 500px; }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px; }
-
-.App-intro {
-  font-size: large; }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
-
-.Inform-header {
-  background-color: #499383;
-  height: 5vw;
-  padding: 20px; }
-
-.Inform-title {
-  font-size: 1.5em;
-  text-align: left; }
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
 
 .Results {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  background-color: #499383; }
-
-.NameSection {
-  margin: 0 20px 20px 20px;
-  border-style: solid;
-  border-width: 2px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around; }
-
-.BrandData {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  font-size: 40px; }
-
-.Rankings {
-  margin: 0 20px 20px 20px;
-  border-style: solid;
-  border-width: 2px;
-  display: flex;
-  flex-direction: column;
-  text-align: left; }
-  .Rankings h1 {
-    text-align: left; }
-  .Rankings ul {
-    list-style-type: none; }
-  .Rankings span {
-    font-style: bold; }
+  width: 100%;
+  height: 0vw;
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr 3fr;
+  grid-template-rows: 2fr 4fr 3fr  2fr; }
+  .Results .extHeader {
+    height: 10vw;
+    grid-column: 1 / 5;
+    grid-row: 1 / 2; }
+  .Results .Overall {
+    height: 400vw;
+    grid-column: 1 / 5;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    height: 150px; }
+    .Results .Overall .score {
+      grid-column: 2 / 3; }
+      .Results .Overall .score h4 {
+        font-style: bold; }
+      .Results .Overall .score p {
+        font-size: 30px; }
+      .Results .Overall .score #overall-score {
+        font-size: 48px; }
+    .Results .Overall .titles {
+      grid-column: 3 / 4; }
+    .Results .Overall .breakdown {
+      grid-column: 4 / 5; }
+  .Results .Competitors {
+    grid-column: 1 / 5;
+    grid-row: 3 / 4;
+    display: flex;
+    flex-direction: column; }
+    .Results .Competitors .competitorNames {
+      grid-row: 1 / 2;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-content: flex-start; }
+    .Results .Competitors .competitorScore {
+      grid-row: 2 / 3;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      font-size: 24px; }
+  .Results .Details {
+    grid-column: 1 / 5;
+    grid-row: 4 / 5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center; }
 
 .Splash {
   width: 100vw;
+  height: 100vw;
   font-size: 24px; }
   .Splash a {
     color: #499383;

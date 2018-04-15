@@ -6,7 +6,7 @@ class Footer extends Component {
         return(
             <div className="Footer">
                 <div className="backtotop">
-                    <a href="#top">Back to top</a>
+                    <a href="#Top">Back to top</a>
                 </div>
                 <div className="footerdescription">
                     <p>This is a thesis project by Jeff Park something else about the project/who you are/your program</p>
