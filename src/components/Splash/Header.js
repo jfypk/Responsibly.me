@@ -14,7 +14,7 @@ class Header extends Component {
                     </ul>
                 </div>
                 <div className="headerImg">
-                    <img src="https://media.mnn.com/assets/images/2015/05/fjord-01.jpeg"></img>
+                    <img src="https://media.mnn.com/assets/images/2015/05/fjord-01.jpeg" alt="Hero"></img>
                 </div>
                 
             </div>

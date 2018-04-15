@@ -1,5 +1,3 @@
-// use flexbox to position the elements side by side of one another.
-// use display: grid as well
 $white: #ffffff;
 $blue: #0033cc;
 $bridesmaid: #FFEFEA;
@@ -7,89 +5,118 @@ $green: #499383;
 $black: #000000;
 $font: 'Open Sans Condensed',
 sans-serif;
+
 #url {
     display: none;
 }
 
 body {
-    margin: 0;
-    padding: 0;
     font-family: $font;
-    color: $white;
+    color: $black;
+    width: 500px;
+    height: 500px;
 }
 
-.App-logo {
-    animation: App-logo-spin infinite 20s linear;
-    height: 80px;
-}
-
-.App-intro {
-    font-size: large;
-}
-
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-.Inform-header {
-    background-color: $green;
-    height: 5vw;
-    padding: 20px;
-}
-
-.Inform-title {
-    font-size: 1.5em;
-    text-align: left;
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
 }
 
 .Results {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    background-color: $green;
+    width: 100%;
+    height: 0vw;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    grid-template-rows: 2fr 4fr 3fr  2fr;
+    .extHeader {
+        height: 10vw;
+        grid-column: 1 / 5;
+        grid-row: 1 / 2;
+    }
+    .Overall {
+        height: 400vw;
+        grid-column: 1 / 5;
+        grid-row: 2 / 3;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        height: 150px;
+        .score {
+            grid-column: 2 / 3;
+            h4{
+                font-style: bold;
+            }
+            p {
+                font-size: 30px;
+            }
+            #overall-score {
+                font-size: 48px;
+            }
+
+        }
+        .titles {
+            grid-column: 3 / 4;
+        }
+        .breakdown {
+            grid-column: 4 / 5;
+        }
+    }
+    .Competitors {
+        grid-column: 1 / 5;
+        grid-row: 3 / 4;
+        display: flex;
+        flex-direction: column;
+        .competitorNames {
+            grid-row: 1 / 2;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-content: flex-start;
+            
+        }
+        .competitorScore {
+            grid-row: 2 / 3;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            font-size: 24px;
+        }
+        
+    }
+    .Details {
+        
+        grid-column: 1 / 5;
+        grid-row: 4 / 5;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        align-content: center;
+        .Sustainability {
+           
+
+        }
+        .Environmental {
+          
+
+        }
+        .Fairness {
+          
+        }
+    }
+    
 }
 
-.NameSection {
-    margin: 0 20px 20px 20px;
-    border-style: solid;
-    border-width: 2px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
 
-.BrandData {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-size: 40px;
-}
-
-.Rankings {
-    margin: 0 20px 20px 20px;
-    border-style: solid;
-    border-width: 2px;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    h1 {
-        text-align: left;
-    }
-    ul {
-        list-style-type: none;
-    }
-    span {
-        font-style: bold;
-    }
-}
 
 .Splash {
     width: 100vw;
+    height: 100vw;
     font-size: 24px;
     a {
         color: $green;

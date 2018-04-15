@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import Results from '../components/Results.js';
+import Results from '../components/Result/Results.js';
 import MissingCompany from '../components/MissingCompany';
 
 
