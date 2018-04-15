@@ -6,6 +6,7 @@ class Overview extends Component {
         return(
             <div className="Overview">
                 <div id="description">
+                    <a name="Overview"></a> 
                     <h2>Overview</h2>
                     <div id="col1">
                         <p>Corporations are more powerful than ever, and great power comes great responsibility.</p>
@@ -20,6 +21,7 @@ class Overview extends Component {
 		            
 	        	</div>
                 <div id="howto">
+                    <a name="Install"></a> 
                     <h2>How to use Inform</h2> 
                     <p>Inform works through a Chrome extension blah blah blah you must install it and then it will work on those sites or whatever. This is placeholder copy</p>
                     <a href="https://www.jeff-park.com"><div className="button">Add to Chrome</div></a>

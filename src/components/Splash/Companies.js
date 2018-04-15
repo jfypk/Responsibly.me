@@ -7,6 +7,7 @@ class Companies extends Component {
             <div className="Companies">
                 <div className="companiesText">
                     <div>
+                        <a name="Companies"></a> 
                         <h2>Companies</h2>
                         <p>Inform has data at the following companies. If you can't find the company you're looking for, tweet at them and demand transparency!</p>
                     </div>
