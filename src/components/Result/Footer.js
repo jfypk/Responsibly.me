@@ -8,7 +8,7 @@ class Footer extends Component {
         return(
             <div className="extFooter">
                 <hr />
-                <h1>Inform</h1>
+                <h2>Inform</h2>
             </div>
         );
     }

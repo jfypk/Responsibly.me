@@ -5,6 +5,7 @@ import Competitors from './Competitors.js';
 import Header from './Header.js';
 import Overall from './Overall.js';
 import Footer from './Footer.js';
+import Survey from './Survey.js';
 
 class Results extends Component {
 
@@ -20,6 +21,7 @@ class Results extends Component {
         return (
             <div className="Results">
                 <Header name={this.props.data.brand}/>
+                <Survey />
                 <Overall fscore={this.props.data.fairness_score} 
                         sscore={this.props.data.sustainability_score} 
                         escore={this.props.data.environmental_score} 

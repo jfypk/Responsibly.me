@@ -35,10 +35,16 @@ hr {
     grid-template-rows: 1fr 2fr 2fr 9fr 1fr;
     font-size: 16px;
     .extHeader {
-        grid-column: 1 / 5;
+        grid-column: 1 / 3;
         grid-row: 1 / 2;
         padding-left: 10px;
+    }
+    #survey {
+        grid-column: 4 / 5;
+        grid-row: 1 / 2;
         padding-right: 10px;
+        justify-self: start;
+        align-self: center;
     }
     .Overall {
         grid-column: 1 / 5;
