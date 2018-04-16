@@ -168,7 +168,7 @@ hr {
     color: #000000;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 2fr 2fr 1fr 1fr 2fr;
-    grid-template-rows: 1fr 1fr 6fr;
+    grid-template-rows: 1fr 1fr 4.5fr;
     align-items: center; }
     .Splash .Companies #companiesheader {
       grid-column: 2 / 8;
