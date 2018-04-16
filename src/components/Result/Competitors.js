@@ -30,6 +30,7 @@ class Competitors extends Component {
         
         return(
             <div className="Competitors">
+                <hr />
                 <div className="competitorScore">
                     {competitor_scores}
                 </div>

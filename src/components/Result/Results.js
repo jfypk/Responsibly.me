@@ -4,6 +4,7 @@ import Details from './Details.js';
 import Competitors from './Competitors.js';
 import Header from './Header.js';
 import Overall from './Overall.js';
+import Footer from './Footer.js';
 
 class Results extends Component {
 
@@ -31,6 +32,7 @@ class Results extends Component {
                     competitor_scores = {this.noInfo(this.props.data.competitor_scores)}
                     />
                 <Details 
+                    brand = {this.props.data.brand}
                     cei_rating= {this.noInfo(this.props.data.cei_rating) } 
                     women_on_board= {this.noInfo(this.props.data.women_on_board)} 
                     best_workplaces_women= {this.noInfo(this.props.data.best_workplaces_women) } 
@@ -52,6 +54,7 @@ class Results extends Component {
                     pfc_elimination= {this.noInfo(this.props.data.pfc_elimination) } 
                     transparency= {this.noInfo(this.props.data.transparency) } 
                 />
+                <Footer />
                 </div>
         );
         

@@ -7,7 +7,7 @@ class Details extends Component {
         return(
             <div className="Details">
                 <div className="Sustainability">
-                    <h1>Sustainability</h1>
+                    <h3>Sustainability</h3>
                     <h4>How sustainable are {this.props.brand}'s business practices?</h4>
                     <ul>
                         <li>ESG Score: {this.props.esg_score}</li>
@@ -16,7 +16,7 @@ class Details extends Component {
                     </ul>
                 </div>
                 <div className="Environmental">
-                    <h1>Environmental Health</h1>
+                    <h3>Environmental Health</h3>
                     <h4>What portion of {this.props.brand}'s energy comes from:</h4>
                     <ul>
                         <li>Clean Energy: {this.props.clean_energy_index}</li>
@@ -42,7 +42,7 @@ class Details extends Component {
                     </ul>
                 </div>
                 <div className="Fairness">
-                    <h1>Fairness in the Workplace</h1>
+                    <h3>Fairness in the Workplace</h3>
                     <h4>How much does {this.props.brand} care about a fair workplace regardless of gender, sexual orientation, and race?</h4>
                     <ul>
                          <li>Corporate Equality Index: {this.props.cei_rating}</li>

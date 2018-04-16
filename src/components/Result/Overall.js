@@ -7,16 +7,16 @@ class Overall extends Component {
 
         return(
             <div className="Overall">
-                <div className="score">
+                <div id="overallscoresection">
                     <h4>Overall</h4>
                     <p><span id="overall-score">{this.props.score}</span> / 100</p>
                 </div>
-                <div className="titles">
+                <div id="overalltitles">
                     <p>Sustainability</p>
                     <p>Environmental</p>
                     <p>Workplace</p>
                 </div>
-                <div className="breakdown">
+                <div id="overallbreakdown">
                     <p>{this.props.sscore}</p>
                     <p>{this.props.escore}</p>
                     <p>{this.props.fscore}</p>

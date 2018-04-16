@@ -7,7 +7,6 @@ class Header extends Component {
         return(
             <div className="SplashHeader">
                 <div className="headerText">
-                    <a name="Top"></a> 
                     <h1>Inform</h1>
                     <ul>
                         <li><a href="#Overview">Overview</a></li>
