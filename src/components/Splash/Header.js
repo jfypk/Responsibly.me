@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../../index.css';
 
 class Header extends Component {
+    //add logo
     render() {
         return(
             <div className="SplashHeader">

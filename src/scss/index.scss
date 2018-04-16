@@ -3,9 +3,8 @@ $blue: #0033cc;
 $bridesmaid: #FFEFEA;
 $green: #499383;
 $black: #000000;
-$font: 'Open Sans Condensed',
+$font: 'Questrial',
 sans-serif;
-
 #url {
     display: none;
 }
@@ -31,7 +30,7 @@ hr {
     height: 0vw;
     display: grid;
     grid-template-columns: 3fr 3fr 3fr 3fr;
-    grid-template-rows: 2fr 4fr 3fr  2fr;
+    grid-template-rows: 2fr 4fr 3fr 2fr;
     .extHeader {
         height: 10vw;
         grid-column: 1 / 5;
@@ -47,7 +46,7 @@ hr {
         height: 150px;
         .score {
             grid-column: 2 / 3;
-            h4{
+            h4 {
                 font-style: bold;
             }
             p {
@@ -56,7 +55,6 @@ hr {
             #overall-score {
                 font-size: 48px;
             }
-
         }
         .titles {
             grid-column: 3 / 4;
@@ -76,7 +74,6 @@ hr {
             flex-direction: row;
             justify-content: space-evenly;
             align-content: flex-start;
-            
         }
         .competitorScore {
             grid-row: 2 / 3;
@@ -86,38 +83,24 @@ hr {
             align-items: center;
             font-size: 24px;
         }
-        
     }
     .Details {
-        
         grid-column: 1 / 5;
         grid-row: 4 / 5;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: stretch;
         align-content: center;
-        .Sustainability {
-           
-
-        }
-        .Environmental {
-          
-
-        }
-        .Fairness {
-          
-        }
+        .Sustainability {}
+        .Environmental {}
+        .Fairness {}
     }
-    
 }
-
-
 
 .Splash {
     width: 100vw;
     height: 100vw;
-    font-size: 24px;
     a {
         color: $green;
         text-decoration: none;
@@ -131,10 +114,10 @@ hr {
     .SplashHeader {
         background-color: $bridesmaid;
         color: $black;
-        height: 65vw;
+        height: 60vw;
         display: grid;
-        grid-template-columns: 19% 17% 57% 7%;
-        grid-template-rows: 9% 82% 9%;
+        grid-template-columns: 2fr 2fr 1fr 5fr 2fr;
+        grid-template-rows: 1fr 10fr 1fr;
         justify-items: center;
         align-items: center;
         justify-content: center;
@@ -143,50 +126,60 @@ hr {
             grid-column-end: 3;
             grid-row-start: 2;
             grid-row-end: 3;
+            justify-self: end;
+            ul {
+                font-size: 18px;
+            }
         }
         .headerImg {
-            grid-column-start: 3;
-            grid-column-end: 4;
+            grid-column-start: 4;
+            grid-column-end: 5;
             grid-row-start: 2;
             grid-row-end: 3;
         }
     }
     .Overview {
-        margin-top: 60px;
-        margin-bottom: 20px;
-        background-color: $white;
         color: $black;
-        height: 60vw;
+        font-size: 16px;
         display: grid;
-        grid-template-columns: 19% 31% 31% 19%;
-        grid-template-rows: 9% 53% 8% 17% 9%;
-        justify-items: center;
+        grid-template-columns: 2fr 1fr 2.5fr 1fr 2.5fr 1fr 2fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         align-items: center;
-        justify-content: center;
-        #description {
-            grid-column-start: 2;
-            grid-column-end: 4;
-            grid-row-start: 2;
-            grid-row-end: 3;
-            display: grid;
-            grid-template-columns: 6% 16% 28% 6% 28% 16%;
-            grid-template-rows: 9% 81% 9%;
-            #col1 {
-                grid-column: 2 / 4;
-                grid-row: 2 / 3;
-            }
-            #col2 {
-                grid-column: 5 / 7;
-                grid-row: 2 / 3;
-                align-self: end;
-                justify-self: end;
-            }
+        #overviewheader {
+            grid-column: 2 / 7;
+            grid-row: 2 / 3;
+            justify-self: center;
+            align-self: end;
         }
-        #howto {
-            grid-column-start: 2;
-            grid-column-end: 5;
-            grid-row-start: 4;
-            grid-row-end: 6;
+        #col1 {
+            grid-column: 2 / 4;
+            grid-row: 3 / 6;
+            justify-self: center;
+            align-self: start;
+        }
+        #col2 {
+            grid-column: 5 / 7;
+            grid-row: 3 / 6;
+            justify-self: center;
+            align-self: start;
+        }
+        #howtoheader {
+            grid-column: 2 / 7;
+            grid-row: 7 / 8;
+            justify-self: center;
+            align-self: end;
+        }
+        #howtotext {
+            grid-column: 3 / 6;
+            grid-row: 8 / 9;
+            text-align: center;
+            align-self: start;
+        }
+        #chromebutton {
+            grid-column: 3 / 6;
+            grid-row: 9 / 10;
+            justify-self: center;
+            align-self: start;
         }
         .button {
             background-color: $green;
@@ -203,36 +196,45 @@ hr {
         background-color: $white;
         color: $black;
         display: grid;
-        grid-template-columns: 19% 15.5% 15.5% 15.5% 15.5% 19%;
-        grid-template-rows: 100%;
-        justify-items: start;
+        grid-template-columns: 2fr 1fr 1fr 2fr 2fr 1fr 1fr 2fr;
+        grid-template-rows: 1fr 1fr 6fr;
         align-items: center;
-        justify-content: center;
-        .companiesText {
-            grid-column: 2 / 6;
+        #companiesheader {
+            grid-column: 2 / 8;
             grid-row: 1 / 2;
+            justify-self: center;
+            align-self: start;
         }
-        .companiesList {
-            display: grid;
-            grid-template-columns: 19% 15.5% 15.5% 15.5% 15.5% 19%;
-            grid-template-rows: 100%;
-            justify-items: start;
-            .firstCol {
-                grid-column: 2 / 3;
-                grid-row: 1 / 2;
-            }
-            .secondCol {
-                grid-column: 3 / 4;
-                grid-row: 1 / 2;
-            }
-            .thirdCol {
-                grid-column: 4 / 5;
-                grid-row: 1 / 2;
-            }
-            .fourthCol {
-                grid-column: 5 / 6;
-                grid-row: 1 / 2;
-            }
+        #companiestext {
+            grid-column: 3 / 7;
+            grid-row: 2 / 3;
+            justify-self: center;
+            align-self: start;
+            text-align: center;
+        }
+        #firstCol {
+            grid-column: 2 / 4;
+            grid-row: 3 / 4;
+            justify-self: center;
+            align-self: start;
+        }
+        #secondCol {
+            grid-column: 4 / 5;
+            grid-row: 3 / 4;
+            justify-self: center;
+            align-self: start;
+        }
+        #thirdCol {
+            grid-column: 5 / 6;
+            grid-row: 3 / 4;
+            justify-self: center;
+            align-self: start;
+        }
+        #fourthCol {
+            grid-column: 6 / 8;
+            grid-row: 3 / 4;
+            justify-self: center;
+            align-self: start;
         }
     }
     .Footer {
