@@ -150,6 +150,10 @@ hr {
         display: grid;
         grid-template-columns: 2fr 1fr 2.5fr 1fr 2.5fr 1fr 2fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        background-image: url("assets/Wave.png");
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        background-size: 200vw;
         align-items: center;
         #overviewheader {
             grid-column: 2 / 7;
@@ -247,21 +251,21 @@ hr {
         background-color: $bridesmaid;
         color: $black;
         display: grid;
-        grid-template-columns: 19% 20.67% 20.67% 20.66% 19%;
+        grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
         grid-template-rows: 100%;
         justify-items: center;
         align-items: center;
         justify-content: center;
         .backtotop {
-            grid-column: 2 / 3;
+            grid-column: 4 / 5;
             grid-row: 1 / 2;
         }
         .footerdescription {
-            grid-column: 3 / 4;
+            grid-column: 2 / 4;
             grid-row: 1 / 2;
         }
         .copyright {
-            grid-column: 4 / 5;
+            grid-column: 5 / 6;
             grid-row: 1 / 2;
         }
     }
