@@ -1,0 +1,64 @@
+html {
+    font-family: "Questrial", sans-serif;
+    width: 100vw;
+    height: 100vw;
+    background-color: #FFEFEA;
+}
+
+header {
+    padding: 0 50px 0 50px;
+}
+
+a {
+    text-decoration: none;
+    color: #499383
+}
+
+ul {
+    text-align: left;
+    list-style: none;
+}
+
+#sources {
+    text-align: center;
+    margin: 0 50px 0 50px;
+    display: grid;
+    height: 40vw;
+    grid-template-columns: 2fr 4fr 2fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr 1fr;
+}
+
+#sources #sourcesheader {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    justify-self: stretch;
+    align-self: end;
+}
+
+#sources #sourcestext {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    justify-self: stretch;
+    align-self: center;
+}
+
+#sources #sourceslist {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    justify-self: center;
+    align-self: end;
+}
+
+#sources #methodheader {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    justify-self: center;
+    align-self: end;
+}
+
+#sources #methodtext {
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+    justify-self: center;
+    align-self: end;
+}

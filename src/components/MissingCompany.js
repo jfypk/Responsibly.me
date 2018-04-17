@@ -6,9 +6,9 @@ class MissingCompany extends Component {
 		return(
 			<div className="MissingCompany">
 				<h2>Missing data!</h2>
-				<p>Sorry, but Inform does not have data on this company.</p>
+				<p>Sorry, but Responsibly.me does not have data on this company.</p>
 				<p>It could be that this data is not publicly available. Reach out to this company through email or Twitter to demand transparency! Help us make this world a better place.</p>
-				<p>For more help, please contact us at info@inform.cc</p>
+				<p>For more help, please contact us at info@responsibly.me</p>
 			</div>
 			);
 	}

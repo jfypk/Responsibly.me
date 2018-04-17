@@ -15,12 +15,12 @@ class Overview extends Component {
                 </div>
                 <div id="col2">
                     <br /><br /><br />
-                    <p>Inform is a tool for consumers to use their buying power to influence the social responsibility initiatives of companies. It aggregates existing Corporate Social Responsibility (CSR) data on initiatives pertaining to sustainable supply chain practices, labor rights, energy usage and more. </p>
+                    <p>Responsibly is a tool for consumers to use their buying power to influence the social responsibility initiatives of companies. It aggregates existing Corporate Social Responsibility (CSR) data on initiatives pertaining to sustainable supply chain practices, labor rights, energy usage and more. </p>
                     <p>By staying informed, you can support companies that implement sound social responsibility practices and avoid those that don't. </p>
                 </div>
                 <div id="howtoheader">
                     <a name="Install"></a> 
-                    <h3>How to use Inform</h3> 
+                    <h3>How to use Responsibly</h3> 
                 </div>
                 <div id="howtotext">
                     <p>Inform works through a Chrome extension blah blah blah you must install it and then it will work on those sites or whatever. This is placeholder copy</p>

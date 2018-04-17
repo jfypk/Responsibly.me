@@ -10,7 +10,7 @@ class Companies extends Component {
                     <h3>Companies</h3>
                 </div>
                 <div id="companiestext">
-                    <p>Inform has data at the following companies. If you can't find the company you're looking for, tweet at them and demand transparency!</p>
+                    <p>Responsibly has data at the following companies. If you can't find the company you're looking for, tweet at them and demand transparency!</p>
                 </div>
                 <div id="firstCol">
                     <ul>
