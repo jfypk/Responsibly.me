@@ -23,9 +23,9 @@ class Overview extends Component {
                     <h3>How to use Responsibly</h3> 
                 </div>
                 <div id="howtotext">
-                    <p>Inform works through a Chrome extension blah blah blah you must install it and then it will work on those sites or whatever. This is placeholder copy</p>
+                    <p>Install the Responsibly.me extension and click on the Responsibly.me icon on your browser to begin your experience.</p>
                 </div>
-                <div id="chromebutton"><a href="https://www.jeff-park.com"><div className="button">Add to Chrome</div></a></div>
+                <div id="chromebutton"><a href="https://www.jeff-park.com"><div className="button">Add Extension</div></a></div>
             </div>
         )
     }

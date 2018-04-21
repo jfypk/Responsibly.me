@@ -1,16 +1,16 @@
 {
     "manifest_version": 2,
-    "name": "Responsibly",
-    "description": "Shop Responsibly",
+    "name": "Responsibly.me",
+    "description": "How responsible are the companies you shop from?",
     "version": "0.0.1",
     "browser_action": {
         "default_popup": "index.html",
-        "default_title": "Open the popup"
+        "default_title": "Shop Responsibly"
     },
     "icons": {
-        "16": "tree.png",
-        "48": "tree.png",
-        "128": "tree.png"
+        "16": "favicon.png",
+        "48": "favicon.png",
+        "128": "favicon.png"
     },
     "permissions": ["tabs"]
 }
