@@ -12,7 +12,7 @@ var router = express.Router();
 var path = require('path');
 
 //set up our port
-var port = process.env.API_PORT || 3001;
+var port = process.env.API_PORT || 3005;
 
 //db config (MOVE TO SEPARATE serverConfig FILE)
 mongoose.connect('mongodb://admin:password@ds117489.mlab.com:17489/inform-dev');

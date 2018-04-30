@@ -11,7 +11,7 @@ Responsibly.me is a web platform designed for consumers to use their buying powe
 **To start**
 ```
 npm start
-nodemon server.js to start api at localhost:3001/api/results
+nodemon server.js to start api at localhost:3005/api/results
 ```
 
 mlab
