@@ -14,7 +14,7 @@ var router = express.Router();
 var port = process.env.API_PORT || 3001;
 
 //db config (MOVE TO SEPARATE serverConfig FILE)
-mongoose.connect('mongodb://jpark:jfeark3@ds117489.mlab.com:17489/inform-dev');
+mongoose.connect('mongodb://admin:password@ds117489.mlab.com:17489/inform-dev');
 
 //configure API to use bodyParser and look for JSON data in request body
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -39,6 +39,9 @@ router.get('/', function(req, res) {
 
 //Use router config when we call /api
 app.use('/api', router);
+
+app.use( express.static( `${__dirname}/../build`));
+
 
 //adding the /results route to our /api router
 router.route('/results')
@@ -136,3 +139,8 @@ router.route('/results')
 app.listen(port, function() {
     console.log('API IS LIVE ON ${port}');
 });
+
+const path = require('path');
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../build/index.html'));
+})
