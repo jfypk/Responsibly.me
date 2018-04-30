@@ -9,6 +9,7 @@ var Result = require('./model/Results');
 //create instances
 var app = express();
 var router = express.Router();
+var path = require('path');
 
 //set up our port
 var port = process.env.API_PORT || 3001;
@@ -40,7 +41,7 @@ router.get('/', function(req, res) {
 //Use router config when we call /api
 app.use('/api', router);
 
-app.use( express.static( `${__dirname}/../build`));
+app.use(express.static(path.join(__dirname, 'build')));
 
 
 //adding the /results route to our /api router
@@ -137,10 +138,11 @@ router.route('/results')
 
 //start server and listen for requests
 app.listen(port, function() {
-    console.log('API IS LIVE ON ${port}');
+    console.log(`API IS LIVE ON ${port}`);
 });
 
-const path = require('path');
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../build/index.html'));
-})
+
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+app.listen(9000);
