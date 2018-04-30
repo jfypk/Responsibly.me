@@ -25,7 +25,7 @@ class Overview extends Component {
                 <div id="howtotext">
                     <p>Install the Responsibly.me extension and click on the Responsibly.me icon on your browser to begin your experience.</p>
                 </div>
-                <div id="chromebutton"><a href="https://www.jeff-park.com"><div className="button">Add Extension</div></a></div>
+                <div id="chromebutton"><a href="https://chrome.google.com/webstore/detail/ipfnfjphgcbbogcahmkglnacjfnfgjgl/publish-accepted?authUser=0&hl=en-US"><div className="button">Add Extension</div></a></div>
             </div>
         )
     }
