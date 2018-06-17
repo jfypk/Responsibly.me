@@ -1,4 +1,4 @@
-#Responsibly
+# Responsibly.me
 
 Currently under development. 
 Version: 0.1
