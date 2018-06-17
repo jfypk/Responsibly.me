@@ -4,7 +4,7 @@ Currently under development.
 Version: 0.1
 Developed by: Jeff Park
 
-Responsibly.me is a web platform designed for consumers to use their buying power to influence the Corporate Social Responsibility initiatives of companies. It's time for the people to take back their power!
+[Responsibly.me](https://www.responsibly.me) is a web platform designed for consumers to use their buying power to influence the Corporate Social Responsibility initiatives of companies. It's time for the people to take back their power!
 
 #Development notes:
 
